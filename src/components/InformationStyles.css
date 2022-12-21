@@ -1,0 +1,82 @@
+.information {
+    width: 100%;
+    margin-top: 5rem;
+}
+
+.information .container{
+    max-width: 1240px;
+    padding: 1rem;
+    margin: auto;
+    overflow: hidden;
+}
+
+.information .top-content{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    border-bottom: 1px solid var(--lightgrey);
+    padding-bottom: 3rem;
+}
+
+.information .top-content h2{
+    font-size: 38px;
+    padding-bottom: .5rem;
+}
+
+.information .top-content span{
+  color: var(--primary);
+}
+
+.information .top-content p{
+  color: var(--grey);
+}
+
+.information .bottom-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 3rem auto;
+}
+
+.information .card{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem 1rem 0;
+}
+
+.information .card div {
+    display: flex;
+    border-bottom: 1px solid var(--lightgrey);
+    padding: 1rem 0;
+}
+
+.information .card .no-border{
+    border: none;
+}
+
+.information .card span{
+    color: var(--primary);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.information .card h3{
+    font-size: 28px;
+    margin: 0.7rem 0;
+}
+
+@media screen and (max-width: 960px){
+    .information .top-content {
+        grid-template-columns: 1fr;
+    }
+
+    .information .container .bottom-content{
+        display: none;
+    }
+
+    .information .top-content h2{
+        font-size: 32px;
+    }
+
+    
+}
